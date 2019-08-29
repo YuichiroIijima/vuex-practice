@@ -17,9 +17,6 @@ const Home = {
             if (rootState.errorFlag) {
                 commit( "setStepCount", null, {"root": true })
             }
-            if (rootState.stepCount === 2 ) {
-                router.push("thanks")
-            }
         }
     },
     getters: {

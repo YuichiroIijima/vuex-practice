@@ -17,16 +17,13 @@ const Home = {
             if (rootState.errorFlag) {
                 commit( "setStepCount", null, {"root": true })
             }
-            if (rootState.stepCount === 2 ) {
-                router.push("thanks")
-            }
         }
     },
     getters: {
         getButton (state, getters, rootState) {
             return state.button[rootState.stepCount]
         },
-        getComponent (state, getters, rootState) {
+        getComponent: (state, getters, rootState) {
             return state.component[rootState.stepCount]
         }
     }
@@ -61,15 +58,6 @@ const Textarea = {
     }
 }
 
-const String = {
-    namespaced: true,
-    getters: {
-        getString (state, getters, rootState) {
-            return rootState.impression
-        }
-    }
-}
-
 export default new Vuex.Store({
     state: {
         stepCount: 0,
@@ -93,7 +81,6 @@ export default new Vuex.Store({
     modules: {
         Home,
         Head,
-        Textarea,
-        String
+        Textarea
     }
 })

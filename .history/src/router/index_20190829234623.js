@@ -14,7 +14,7 @@ export default new Router({
     },
     {
       path: '/thanks',
-      name: 'Thanks',
+      name: "Thanks",
       component: Thanks
     }
   ]

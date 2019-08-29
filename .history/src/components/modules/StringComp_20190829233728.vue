@@ -8,7 +8,7 @@ export default {
   name: 'stringComp',
   computed: mapGetters("String", {
     "string": "getString"
-  })
+  }
 }
 </script>
 

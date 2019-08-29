@@ -20,8 +20,7 @@ export default {
     "buttonAction": "buttonAction"
   }),
   computed: mapGetters("Home", {
-    "button": "getButton",
-    "isComponent": "getComponent"
+    "button": "getButton"
   }),
   components: {
     HeadComp,
