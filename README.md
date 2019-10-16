@@ -1,6 +1,7 @@
 # vuex-project
 
-> A Vue.js project
+learn Vuex-Project
+> https://qiita.com/_P0cChi_/items/ebf8fbf035b36218a37e
 
 ## Build Setup
 
